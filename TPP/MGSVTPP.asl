@@ -18,5 +18,5 @@ split
 
 isLoading
 {
-    return (current.isLoad == 61920 && current.isLoad2 == 2);
+    return (current.isLoad1 == 61920 && current.isLoad2 == 2);
 }
