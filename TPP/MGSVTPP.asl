@@ -1,7 +1,6 @@
 state("mgsvtpp")
 {
-    int isLoad1 : "mgsvtpp.exe", 0x2A9D614;
-    int isLoad2 : "mgsvtpp.exe", 0x2A65948;
+    bool isLoad : "mgsvtpp.exe", 0x2ABF8C4;
 }
 
 start
@@ -18,5 +17,5 @@ split
 
 isLoading
 {
-    return (current.isLoad1 == 61920 && current.isLoad2 == 2);
+    return current.isLoad;
 }
